@@ -135,6 +135,7 @@ namespace app {
   };
 
   void push_app_events(lua_State* L);
+  void push_app_theme(lua_State* L);
   int push_image_iterator_function(lua_State* L, const doc::Image* image, int extraArgIndex);
   void push_brush(lua_State* L, const doc::BrushRef& brush);
   void push_cel_image(lua_State* L, doc::Cel* cel);
@@ -161,7 +162,7 @@ namespace app {
   void push_sprite_slices(lua_State* L, doc::Sprite* sprite);
   void push_sprite_tags(lua_State* L, doc::Sprite* sprite);
   void push_sprites(lua_State* L);
-  void push_tileset(lua_State* L, doc::Tileset* tileset);
+  void push_tileset(lua_State* L, const doc::Tileset* tileset);
   void push_tileset_image(lua_State* L, doc::Tileset* tileset, doc::Image* image);
   void push_tilesets(lua_State* L, doc::Tilesets* tilesets);
   void push_tool(lua_State* L, app::tools::Tool* tool);
